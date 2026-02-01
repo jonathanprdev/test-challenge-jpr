@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+#  h2-database:
+#    image: oscarfonts/h2
+#    ports:
+#      - "1521:1521" # Puerto de la base de datos H2
+#      - "81:81" # Puerto de la consola web H2
+#    container_name: h2-database
+#    hostname: h2db
+#    environment:
+#      - H2_TCP_ALLOW_OTHERS=true # Permite conexiones desde otros contenedores
+#      - H2_CREATE_DATABASE_REMOTE=true
+#      - H2_IF_NOT_EXIST=true
+#    volumes:
+#      - ./data:/opt/h2-data # Directorio para almacenar los datos de la base de datos
+#    networks:
+#      - app-network
+  service-app:
+    image: 'service-app:latest'
+    build:
+      context: .
+    container_name: spring-app
+    ports:
+      - "8080:8080"
+#    depends_on:
+#      - h2-database
+#    environment:
+#      - DATABASE_URL=jdbc:h2:tcp://h2db:1521/inditexecommercedb
+#      - DATABASE_USERNAME=sa
+#      - DATABASE_PASSWORD=pwd
+#      - DATABASE_DRIVER=org.h2.Driver
+    networks:
+      - app-network
+networks:
+  app-network: {}

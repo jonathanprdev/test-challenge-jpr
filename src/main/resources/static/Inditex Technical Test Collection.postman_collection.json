@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "e299aba7-6119-474f-a872-fffff59cfc61",
+		"name": "Inditex Technical Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4239830"
+	},
+	"item": [
+		{
+			"name": "Test 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationDate\": \"2020-06-14 10:00\",\r\n  \"productId\": 35455,\r\n  \"brandId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prices/price/apply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"price",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationDate\": \"2020-06-14 16:00\",\r\n  \"productId\": 35455,\r\n  \"brandId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prices/price/apply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"price",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationDate\": \"2020-06-14 21:00\",\r\n  \"productId\": 35455,\r\n  \"brandId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prices/price/apply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"price",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationDate\": \"2020-06-15 10:00\",\r\n  \"productId\": 35455,\r\n  \"brandId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prices/price/apply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"price",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationDate\": \"2020-06-16 21:00\",\r\n  \"productId\": 35455,\r\n  \"brandId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prices/price/apply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prices",
+						"price",
+						"apply"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
