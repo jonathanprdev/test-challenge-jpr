@@ -52,10 +52,9 @@ Se valorará:
 ### Notas de diseño:
 
 Para la implementación de este servicio se utilizó una arquitectura hexagonal, teniendo en cuenta sus 3 capas principales:
-* Dominio: Es la capa donde están definidas todas las entidades de negocio y que reprensentan el modelo. Tambien están definidos los diferentes objetos de tranferencia de datos para la capa web o el adaptador de entrada.
-* Aplicación: Es la capa encargada de la lógica de negocio y de el uso de la infraestructura y el dominio. En este caso para
-el modelo de negocio del requerimiento solo se definió un único puerto el cuál se encarga de usar el adaptador de persistencia para buscar la tarifa correspondiente seg{un los datos de entrada.
-* Infraestructura: En esta capa se definieron 2 adaptadores, uno de entrada que es el controlador web del API y uno de salida que corresponde con la persistencia en H2.
+* Dominio: Es la capa donde están definidas todas las entidades de negocio y que reprensentan el modelo/dominio de negocio.
+* Aplicación: Capa encargada de orquestar los casos de uso del sistema y coordinar el dominio. Define los puertos que abstraen la interacción con sistemas externos. En este caso se definió un único puerto de salida para la consulta de tarifas, el cual es implementado por el adaptador de persistencia que accede a la base de datos.
+* Infraestructura: En esta capa se definieron 2 adaptadores, uno de entrada que es el controlador web del API y uno de salida que corresponde con la persistencia en H2. Tambien están definidos los diferentes objetos de tranferencia de datos (DTOs y mapper).
 
 ### Para ejecutar el servicio como una aplicación Java desde la consola se debe usar el siguiente comando:
 * mvn spring-boot:run

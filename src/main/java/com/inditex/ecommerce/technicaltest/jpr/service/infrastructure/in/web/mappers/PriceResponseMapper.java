@@ -1,6 +1,6 @@
-package com.inditex.ecommerce.technicaltest.jpr.service.application.mappers;
+package com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.mappers;
 
-import com.inditex.ecommerce.technicaltest.jpr.service.domain.dtos.response.PriceResponse;
+import com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.dtos.response.PriceResponse;
 import com.inditex.ecommerce.technicaltest.jpr.service.domain.model.Price;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

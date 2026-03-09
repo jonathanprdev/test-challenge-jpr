@@ -1,4 +1,4 @@
-package com.inditex.ecommerce.technicaltest.jpr.service.domain.dtos.response;
+package com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.dtos.response;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;

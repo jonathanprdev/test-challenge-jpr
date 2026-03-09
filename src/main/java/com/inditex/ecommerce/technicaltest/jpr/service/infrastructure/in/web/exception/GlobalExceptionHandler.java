@@ -1,4 +1,4 @@
-package com.inditex.ecommerce.technicaltest.jpr.service.application.exception;
+package com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.exception;
 
 import com.inditex.ecommerce.technicaltest.jpr.service.domain.exception.PriceNotFoundException;
 import jakarta.validation.ConstraintViolationException;

@@ -1,10 +1,9 @@
 package com.inditex.ecommerce.technicaltest.jpr.service.application.services;
 
-import com.inditex.ecommerce.technicaltest.jpr.service.application.mappers.PriceResponseMapper;
+import com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.mappers.PriceResponseMapper;
 import com.inditex.ecommerce.technicaltest.jpr.service.application.port.FindPriceApplyRepositoryPort;
-import com.inditex.ecommerce.technicaltest.jpr.service.application.usecases.FinderPriceService;
-import com.inditex.ecommerce.technicaltest.jpr.service.domain.dtos.request.PriceRequest;
-import com.inditex.ecommerce.technicaltest.jpr.service.domain.dtos.response.PriceResponse;
+import com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.dtos.request.PriceRequest;
+import com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.dtos.response.PriceResponse;
 import com.inditex.ecommerce.technicaltest.jpr.service.domain.exception.PriceNotFoundException;
 import com.inditex.ecommerce.technicaltest.jpr.service.domain.model.Price;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,9 +12,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -24,7 +20,6 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

@@ -1,4 +1,4 @@
-package com.inditex.ecommerce.technicaltest.jpr.service.domain.dtos.request;
+package com.inditex.ecommerce.technicaltest.jpr.service.infrastructure.in.web.dtos.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotEmpty;
